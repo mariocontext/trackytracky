@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <div class="min-h-screen"><nuxt /></div>
 </template>
 
 <style>
@@ -22,6 +20,10 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+i.material-icons {
+  cursor: pointer;
 }
 
 .button--green {
