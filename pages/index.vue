@@ -1,26 +1,112 @@
 <template>
-  <section class="container mx-auto border border-black p-4 m-4">
-    <div>
-      <logo/>
-      <h1 class="title">
-        nuxtclitest
-      </h1>
-      <h2 class="subtitle text-orange">
-        test of nuxt with tailwind universal app chosen as opposed to SPA
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-          <nuxt-link class="text-blue" to="/faq">FAQ</nuxt-link>
-      </div>
-    </div>
-  </section>
+  <div class="nuxt-holding-element">
+    <header
+      class="sticky flex justify-between items-center w-full pin-t bg-orange p-4"
+    >
+      <!--
+        We may want the header to disappear when content is scrolled down and reappear when scrolled up
+      -->
+      <span> <i class="text-4xl material-icons">menu</i> </span>
+      <span><h1 class="text-lg pl-2">title goes here</h1></span>
+      <span><i class="material-icons">more_vert</i></span>
+    </header>
+    <main class="container mx-auto m-4 p-4">
+      <h2 class="text-xl">Secondary title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+        molestiae numquam eveniet, animi libero sint necessitatibus nemo
+        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
+        officiis minus tenetur neque.
+      </p>
+    </main>
+    <footer class="fixed w-full pin-b bg-grey-light p-4">
+      <p class="text-center">footer goes here</p>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -34,7 +120,6 @@ export default {
 </script>
 
 <style>
-
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
