@@ -1,7 +1,7 @@
 <template>
   <div class="nuxt-holding-element">
     <header
-      class="sticky flex justify-between items-center w-full pin-t bg-orange p-4"
+      class="sticky flex justify-between items-center w-full pin-t bg-grey-light p-4"
     >
       <!--
         We may want the header to disappear when content is scrolled down and reappear when scrolled up
