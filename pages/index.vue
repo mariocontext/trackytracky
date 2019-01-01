@@ -12,96 +12,35 @@
     </header>
     <main class="container mx-auto m-4 p-4">
       <h2 class="text-xl">Secondary title</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
+      <p class="text-sm bg-grey-light">
+        Lorem ipsum dolor s it amet consectetur adipisicing elit. Et eligendi
         molestiae numquam eveniet, animi libero sint necessitatibus nemo
         perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
         officiis minus tenetur neque.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
-        molestiae numquam eveniet, animi libero sint necessitatibus nemo
-        perferendis aspernatur? Expedita ducimus officia iure libero. Dicta
-        officiis minus tenetur neque.
-      </p>
+      <button class="btn btn-primary">Hello World</button>
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form -->
+
+        <form action="/my-handling-form-page" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input class="bg-grey-lighter border border-black border-b block leading-loose px-4 text-grey-darkest mb-4" type="text" id="name" name="user_name">
+          </div>
+
+          <div>
+            <label for="mail">E-mail:</label>
+            <input class="border border-grey" type="email" id="mail" name="user_email">
+          </div>
+
+          <div>
+            <label for="msg">Message:</label>
+            <textarea class="border border-grey" id="msg" name="user_message"></textarea>
+          </div>
+         
+          <div class="button">
+            <button class="btn btn-primary" type="submit">Send your message</button>
+          </div>
+        </form>
     </main>
     <footer class="fixed w-full pin-b bg-grey-light p-4">
       <p class="text-center">footer goes here</p>
@@ -126,7 +65,28 @@ export default {
 }
 */
 
+.btn {
+  @apply bg-secondary rounded p-4 text-green;
+}
+
+.btn:hover {
+  @apply text-blue text-lg;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+
+@screen md {
+
+  .btn-primary {
+    @apply bg-purple text-white;
+  }
+  
+}
+
 .links {
   @apply text-center;
 }
+
 </style>
