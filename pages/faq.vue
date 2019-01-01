@@ -8,6 +8,7 @@
       <h2 class="subtitle text-orange">
         some FAQ text goes here
       </h2>
+      <testcompo/>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -25,10 +26,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Testcompo from '~/components/Testcompo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Testcompo
   }
 }
 </script>

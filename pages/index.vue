@@ -21,10 +21,10 @@
       <button class="btn btn-primary">Hello World</button>
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form -->
 
-        <form action="/my-handling-form-page" method="post">
+        <form class="pb-8" action="/my-handling-form-page" method="post">
           <div>
-            <label for="name">Name:</label>
-            <input class="bg-grey-lighter border border-black border-b block leading-loose px-4 text-grey-darkest mb-4" type="text" id="name" name="user_name">
+            <label class="text-sm" for="name">Name:</label>
+            <input class="border-b-2 block leading-loose text-grey-darkest mb-4 w-full" type="text" id="name" name="user_name">
           </div>
 
           <div>
@@ -41,6 +41,9 @@
             <button class="my-special-border" type="submit">Send your message</button>
           </div>
         </form>
+
+        <nuxt-link to="/faq" class="btn">FAQ page</nuxt-link>
+
     </main>
     <footer class="fixed w-full pin-b bg-grey-light p-4">
       <p class="text-center">footer goes here</p>
@@ -65,7 +68,7 @@ export default {
 }
 */
 
-/* exercise in extraction of classes */
+/* exercise in local extraction of classes */
 
 .btn {
   @apply bg-secondary rounded p-4 text-green;
