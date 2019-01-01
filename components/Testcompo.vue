@@ -4,10 +4,14 @@
       hello worldoo 
     </div>
     <div>
-      <slot name="firsty">default firsty</slot>
+      <p class="text-red" >
+        <slot name="firsty">default firsty</slot>
+      </p>
     </div>
     <div>
-      <slot name="secondy">default secondy</slot>
+      <p class="text-blue-light">
+        <slot name="secondy">default secondy</slot>
+      </p>
     </div>
   </div>
 </template>
