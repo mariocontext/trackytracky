@@ -38,7 +38,7 @@
           </div>
          
           <div class="button">
-            <button class="btn btn-primary" type="submit">Send your message</button>
+            <button class="my-special-border" type="submit">Send your message</button>
           </div>
         </form>
     </main>
@@ -64,6 +64,8 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+/* exercise in extraction of classes */
 
 .btn {
   @apply bg-secondary rounded p-4 text-green;
