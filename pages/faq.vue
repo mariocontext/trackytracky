@@ -8,7 +8,9 @@
       <h2 class="subtitle text-orange">
         some FAQ text goes here
       </h2>
-      <testcompo/>
+      <testcompo>
+        <div slot="firsty">hello 1</div>
+      </testcompo>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
