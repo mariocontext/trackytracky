@@ -79,6 +79,10 @@ i.material-icons {
  */
 @tailwind utilities;
 
+.transform-all {
+  transition: all 0.5s ease-in;
+}
+
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.

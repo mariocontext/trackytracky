@@ -8,6 +8,7 @@
       <h2 class="subtitle text-orange">
         some FAQ text goes here
       </h2>
+      <button class="my-btn">transition test</button>
       <testcompo>
         <div slot="firsty">hello from instance 1</div>
       </testcompo>
@@ -49,6 +50,14 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+.my-btn {
+   @apply p-4 my-2 bg-purple rounded;
+}
+
+.my-btn:hover {
+  background-color: green;
+}
 
 .links {
   @apply text-center;

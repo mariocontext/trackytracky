@@ -71,11 +71,11 @@ export default {
 /* exercise in local extraction of classes */
 
 .btn {
-  @apply bg-secondary rounded p-4 text-green;
+  @apply bg-secondary rounded p-4 text-white;
 }
 
 .btn:hover {
-  @apply text-blue text-lg;
+  @apply text-white text-lg;
 }
 
 .btn-primary {
