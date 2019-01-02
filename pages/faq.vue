@@ -9,7 +9,11 @@
         some FAQ text goes here
       </h2>
       <testcompo>
-        <div slot="firsty">hello 1</div>
+        <div slot="firsty">hello from instance 1</div>
+      </testcompo>
+      <testcompo>
+        <div slot="firsty">goodbye from instance 2</div>
+        <div slot="secondy">bye bye</div>
       </testcompo>
       <div class="links">
         <a
