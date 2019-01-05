@@ -11,20 +11,9 @@
       <span class="your-box-transaction tab inline-block uppercase p-4 border-b-4 border-primary cursor-pointer">Your box</span>
       <span class="global-transaction-tab inline-block uppercase p-4 cursor-pointer">Global</span>
     </div>
-    <section class="listing">
-      <ul class="list-reset">
-        <li>
-          <div class="transaction-item-area flex items-center justify-between p-4 border-b-2 ">
-            <div class="transaction-item-info max-w-md">
-              <h4 class="mb-2 font-normal">transaction item title</h4>
-              <p class="text-xs">summary info goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa iusto qui quos soluta neque voluptates, dolorum corrupti atque dolorem? Veritatis, praesentium fugit? Molestias, sint facere. Quos iusto voluptatibus eius.</p>
-            </div>
-            <div class="transaction-more-details">
-              <button class="border-none bg-none">Details</button>
-            </div>
-          </div>
-        </li>
-      </ul>
+    <section class="transaction-listing">
+        <TransactionItem>
+        </TransactionItem>
     </section>
 
     </main>
@@ -43,9 +32,11 @@
 
 <script>
   import GeneralHeader from '~/components/global/GeneralHeader.vue'
+  import TransactionItem from '~/components/TransactionItem.vue'
   export default {
     components: {
-      GeneralHeader
+      GeneralHeader,
+      TransactionItem
     }
   }
 </script>

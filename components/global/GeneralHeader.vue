@@ -7,7 +7,7 @@
       -->
       <span> <i class="text-4xl material-icons text-white">menu</i> </span>
       <span>
-        <h1 class="text-xl pl-2 text-white">
+        <h1 class="text-xl pl-2 text-white font-normal ">
           <slot name="header-title">title goes here</slot>
         </h1>
         </span>
