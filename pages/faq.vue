@@ -1,9 +1,15 @@
 <template>
+ <div class="nuxt-holding-element">
+
+  <GeneralHeader>
+   <span slot="header-title">title 2</span>
+  </GeneralHeader>
+
   <section class="container mx-auto border border-black p-4 m-4">
     <div>
       <logo/>
       <h1 class="title">
-        FAQ
+        Multi Layout
       </h1>
       <h2 class="subtitle text-orange">
         some FAQ text goes here
@@ -29,19 +35,9 @@
       </div>
     </div>
   </section>
+
+ </div>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-import Testcompo from '~/components/Testcompo.vue'
-
-export default {
-  components: {
-    Logo,
-    Testcompo
-  }
-}
-</script>
 
 <style>
 
@@ -51,15 +47,16 @@ export default {
 }
 */
 
-.my-btn {
-   @apply p-4 my-2 bg-purple rounded;
-}
-
-.my-btn:hover {
-  background-color: green;
-}
-
-.links {
-  @apply text-center;
-}
 </style>
+
+<script>
+
+  import GeneralHeader from '~/components/global/GeneralHeader.vue'
+
+  export default {
+    components: {
+      GeneralHeader
+    }
+  }
+
+</script>

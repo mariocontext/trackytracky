@@ -65,8 +65,42 @@
     @apply border border-red;
 }
 
-i.material-icons {
-    cursor: pointer;
+.btn, button {
+  @apply p-4 border border-grey rounded-lg no-underline uppercase font-semibold text-grey-darker;
+  transition: background-color 0.25s ease-in;
+}
+
+.btn:hover, button:hover {
+  @apply bg-secondary text-white;
+}
+
+.btn-primary {
+  @apply bg-primary text-white border-none;
+}
+
+.btn-tertiary {
+  @apply border-none text-grey bg-transparent;
+}
+
+h1 {
+  @apply my-4 font-light;
+}
+
+label {
+  @apply block mt-4 text-sm;
+}
+
+select, input {
+  @apply w-full h-12 pl-2 mt-2 rounded border border-grey bg-white;
+}
+
+.wizard-button {
+  @apply mt-12 w-64 text-center;
+}
+
+.wizard-splash-icon {
+  @apply my-4 text-grey-light cursor-default;
+  font-size: 10rem;
 }
 
 /**
@@ -79,7 +113,7 @@ i.material-icons {
  */
 @tailwind utilities;
 
-.transform-all {
+.transition-all {
   transition: all 0.5s ease-in;
 }
 
