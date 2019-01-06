@@ -5,13 +5,13 @@
     <span slot="header-title">History</span>
     </GeneralHeader>
 
-  <main class="container mx-auto p-4 m-4 flex flex-col">
+  <main class="container mx-auto px-4 mx-4 flex flex-col">
     <!-- Local and Global History tabs -->
-    <div class="tabs mb-4 border-b-2 text-xl">
+    <div class="tabs container fixed mb-4 border-b-2 bg-white w-full text-xl">
       <span class="your-box-transaction tab inline-block uppercase p-4 border-b-4 border-primary cursor-pointer">Your box</span>
       <span class="global-transaction-tab inline-block uppercase p-4 cursor-pointer">Global</span>
     </div>
-    <section class="transaction-listing">
+    <section class="transaction-listing mt-16">
 
         <TransactionItem 
         v-for="item in items"
@@ -51,15 +51,43 @@
       items: [
           {
             id: nextItemId++,
-            title: 'Foo'
+            title: 'Transaction 1'
           },
           {
             id: nextItemId++,
-            title: 'Bar'
+            title: 'Transaction 2'
           },
           {
             id: nextItemId++,
-            title: 'Solo'
+            title: 'Transaction 3'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 4'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 5'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 6'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 7'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 8'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 9'
+          },
+          {
+            id: nextItemId++,
+            title: 'Transaction 10'
           }
 			  ]
       }
