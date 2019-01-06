@@ -12,8 +12,13 @@
       <span class="global-transaction-tab inline-block uppercase p-4 cursor-pointer">Global</span>
     </div>
     <section class="transaction-listing">
-        <TransactionItem>
-        </TransactionItem>
+
+        <TransactionItem 
+        v-for="item in items"
+        :key="item.id"
+        :item="item"
+        />
+
     </section>
 
     </main>
@@ -33,10 +38,31 @@
 <script>
   import GeneralHeader from '~/components/global/GeneralHeader.vue'
   import TransactionItem from '~/components/TransactionItem.vue'
+
+  let nextItemId = 1
+
   export default {
     components: {
       GeneralHeader,
       TransactionItem
+    },
+    data () {
+    return {
+      items: [
+          {
+            id: nextItemId++,
+            title: 'Foo'
+          },
+          {
+            id: nextItemId++,
+            title: 'Bar'
+          },
+          {
+            id: nextItemId++,
+            title: 'Solo'
+          }
+			  ]
+      }
     }
   }
 </script>
