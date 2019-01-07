@@ -17,7 +17,7 @@
     </header>
     <transition name="slide">
       <span v-show="showdrawer" class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4">
-        <img class="center h-8 w-8 block pb-4 border-b-2" src="~/assets/images/Circular-Image-with-Icon.png">
+        <img class="center h-32 w-32 block pb-4 border-b-2" src="~/assets/images/Circular-Image-with-Icon.png">
         <nuxt-link to="/summary" class="block">Summary</nuxt-link>
         <nuxt-link to="/history" class="block">History</nuxt-link>
         <nuxt-link to="/settings" class="block">Settings</nuxt-link>
