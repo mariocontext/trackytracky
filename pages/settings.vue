@@ -6,35 +6,41 @@
     <span slot="header-title">Settings</span>
     </GeneralHeader>
 
-    <main class="settings-area min-h-screen">
+    <main class="settings-area min-h-screen max-w-sm mx-auto">
 
       <!-- node info section -->
-      <section class="node-info-area">
-        <div class="node-info">
-          <h2 class="text-lg">iMyn node 63</h2>
-          <input type="checkbox" name="testnet" value="yes">Test net</input>
+      <section class="node-info-area box">
+        <div class="node-info flex justify-between">
+          <h2>iMyn node 63</h2>
+          <div>
+            <input type="checkbox" name="toggle-test-net" value="yes">Test net</input>
+          </div>
         </div>
-        <div class="firmware">
-          <p>Firmware version 0.6.5.2</p>
-          <input type="checkbox" name="auto-update" value="yes">auto update</input>
+        <div class="firmware flex justify-between">
+          <div>
+            <p>Firmware version 0.6.5.2</p>
+            <input type="checkbox" name="auto-update" value="yes">auto update</input>
+          </div>
           <button class="node-update-action bg-none border-none disabled">Update</button>
         </div>
         
       </section>
 
       <!-- current time section -->
-      <section class="current-time-area">
-        <h3>Current time</h3>
-        <p>14:32:19 UTC</p>
-        <button class="bg-transparent border-none">Change</button>
+      <section class="current-time-area flex justify-between box">
+        <div>
+          <h3 class="title">Current time</h3>
+          <p class="time-utc">14:32:19 UTC</p>
+        </div>
+        <button class="change-btn bg-transparent border-none">Change</button>
       </section>
 
       <!-- satellites -->
-      <section class="satellites-section">
+      <section class="satellites-section box">
 
-          <h3 class="text-center font-normal">GPS Satellites</h3>
+          <h3 class="sat-title font-normal text-center">GPS Satellites</h3>
 
-          <div class="satellite-list">
+          <div class="satellite-list flex justify-center">
 
             <SatelliteItem>
               <span slot="satellite-id">1A</span>
@@ -60,7 +66,7 @@
 
       </section>
 
-      <form class="wifi-choice" action="#">
+      <form class="wifi-choice box" action="#">
         <label for="wifi-network">Wifi network</label>
           <select name="wifi-network" id="wifi-network">
               <option value="john" selected="selected">Johns Network</option>
@@ -70,7 +76,7 @@
           </select>
       </form>
 
-      <nuxt-link to="/summary" class=" wizard-button bg-basicbtn btn-primary">Next</nuxt-link>
+      <nuxt-link to="/summary" class="wizard-button bg-basic btn btn-primary box">Next</nuxt-link>
 
     </main>
   
@@ -84,8 +90,13 @@
 }
 */
 
+.box {
+  border:1px solid grey;
+  margin: 1rem;
+}
+
 .settings-area {
- color: #F00;
+
 }
 
 .node-info-area {
@@ -97,6 +108,47 @@
 }
 
 .firmware {
+
+}
+
+.title {
+
+}
+
+.time-utc {
+
+}
+
+.change-button {
+
+}
+
+.current-time-area {
+
+}
+
+
+.satellites-section {
+
+}
+
+.sat-title {
+
+}
+
+.satellite-list {
+
+}
+
+.location-coords {
+
+}
+
+.wifi-choice {
+
+}
+
+.wizard-button {
 
 }
 
