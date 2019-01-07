@@ -6,17 +6,17 @@
     <span slot="header-title">Settings</span>
     </GeneralHeader>
 
-    <main class="min-h-screen flex flex-col mt-12 items-center">
+    <main class="settings-area min-h-screen">
 
       <!-- node info section -->
       <section class="node-info-area">
         <div class="node-info">
           <h2 class="text-lg">iMyn node 63</h2>
-          <input class="inline" type="checkbox" name="testnet" value="yes">Test net</input>
+          <input type="checkbox" name="testnet" value="yes">Test net</input>
         </div>
         <div class="firmware">
           <p>Firmware version 0.6.5.2</p>
-          <input class="inline" type="checkbox" name="auto-update" value="yes">auto update</input>
+          <input type="checkbox" name="auto-update" value="yes">auto update</input>
           <button class="node-update-action bg-none border-none disabled">Update</button>
         </div>
         
@@ -31,8 +31,10 @@
 
       <!-- satellites -->
       <section class="satellites-section">
-          <h3 class="my-4 text-center font-normal">GPS Satellites</h3>
-          <div class="flex justify-between">
+
+          <h3 class="text-center font-normal">GPS Satellites</h3>
+
+          <div class="satellite-list">
 
             <SatelliteItem>
               <span slot="satellite-id">1A</span>
@@ -51,15 +53,14 @@
 
           </div>
 
-          <div class="location-coords mt-8 text-lg text-center">
-            36°05'44.7"N 115°10'33.8"W
+          <div class="location-coords text-lg text-center">
+            <p>36°05'44.7"N 115°10'33.8"W</p>
+            <button class="mt-4 uppercase text-center">Retry</button>
           </div>
 
-          <button class="mt-4 uppercase text-center">Retry</button>
-        
       </section>
 
-      <form action="#">
+      <form class="wifi-choice" action="#">
         <label for="wifi-network">Wifi network</label>
           <select name="wifi-network" id="wifi-network">
               <option value="john" selected="selected">Johns Network</option>
@@ -69,7 +70,7 @@
           </select>
       </form>
 
-      <nuxt-link to="/summary" class="btn btn-primary wizard-button">Next</nuxt-link>
+      <nuxt-link to="/summary" class=" wizard-button bg-basicbtn btn-primary">Next</nuxt-link>
 
     </main>
   
@@ -82,6 +83,24 @@
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+.settings-area {
+ color: #F00;
+}
+
+.node-info-area {
+
+}
+
+.node-info {
+
+}
+
+.firmware {
+
+}
+
+
 
 </style>
 
