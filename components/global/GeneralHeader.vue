@@ -13,7 +13,7 @@
           <slot name="header-title">title goes here</slot>
         </h1>
         </span>
-      <span><i class="material-icons text-white cursor-pointer">more_vert</i></span>
+      <span><i v-on:click="showcontextmenu = !showcontextmenu" class="material-icons text-white cursor-pointer">more_vert</i></span>
     </header>
     <transition name="slide">
       <span v-show="showdrawer" class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4">
@@ -34,6 +34,14 @@
         </div>
       </span>
     </transition>
+    <transition name="dropin">
+      <div v-show="showcontextmenu" class="contextmenu absolute pin-r pin-t h-auto w-48 bg-grey-lightest mt-12 mr-12 p-4 flex flex-col items-start ">
+        <a href="#" class="no-underline text-black p-4">Sort by Date</a>
+        <a href="#" class="no-underline text-black p-4">Sort by Type</a>
+        <a href="#" class="no-underline text-black p-4">Filter</a>
+        <a href="#" class="no-underline text-black p-4">Search</a>
+      </div>
+    </transition>
 
 </span>
 </template>
@@ -47,6 +55,15 @@
 /* .slide-leave-active below version 2.1.8 */ {
   transform: translateX(-256px);
 }
+
+.dropin-enter-active, .dropin-leave-active {
+  transition: all .3s ease-in-out;
+}
+
+.dropin-enter, .dropin-leave-to {
+  transform: translateY(-400px);
+  opacity: 0;
+}
 </style>
 
 
@@ -56,7 +73,8 @@ export default {
 
     data() {
       return {
-      showdrawer: false
+      showdrawer: false,
+      showcontextmenu: false
     }
   }
 
