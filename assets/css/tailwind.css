@@ -90,7 +90,7 @@ label {
   @apply block mt-4 text-sm;
 }
 
-select, input {
+select, input[type="password"], input[type="text"] {
   @apply w-full h-12 pl-2 mt-2 rounded border border-grey bg-white;
 }
 
