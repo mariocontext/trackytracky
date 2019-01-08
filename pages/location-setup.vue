@@ -12,7 +12,7 @@
         </div>
 
         <section class="satellites-section flex flex-col items-center">
-          <h3 class="my-4 text-center font-normal">GPS Satellites</h3>
+          <h3 class="my-4 text-center">GPS Satellites</h3>
           <div class="flex justify-between">
 
             <SatelliteItem>
@@ -36,7 +36,7 @@
             36°05'44.7"N 115°10'33.8"W
           </div>
 
-          <button class="mt-4 uppercase text-center">Retry</button>
+          <button class="btn-tertiary mt-4">Retry</button>
         
         </section>
 

@@ -11,11 +11,13 @@
       <!-- node info section -->
       <section class="node-info-area my-4">
         <div class="node-info mb-4 flex justify-between">
-          <h2 class="font-light">iMyn node 63</h2>
+          <h2>iMyn node 63</h2>
           <div class="flex justify-end items-center">
             <span class="font-regular pr-4">Test net</span>
-            <span class="border rounded-full border-grey flex items-center cursor-pointer w-12 bg-primary justify-end">
-              <span class="rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow">
+            <span class="toggler">
+              <span class="toggle-active">
+                <span class="toggle-btn">
+                </span>
               </span>
             </span>
           </div>
@@ -23,7 +25,7 @@
         <div class="firmware mt-4 flex justify-between">
           <div>
             <p>Firmware version 0.6.5.2</p>
-            <input class="mt-4" type="checkbox" name="auto-update" value="yes"> auto update</input>
+            <input class="mt-4" type="checkbox" name="auto-update" value="yes" checked> auto update</input>
           </div>
           <button class="node-update-action opacity-50 cursor-not-allowed">Update</button>
         </div>
@@ -36,13 +38,13 @@
           <h3 class="title">Current time</h3>
           <p class="time-utc mt-4">14:32:19 UTC</p>
         </div>
-        <button class="change-btn bg-transparent border-none">Change</button>
+        <button class="btn-tertiary">Change</button>
       </section>
 
       <!-- satellites -->
       <section class="satellites-section">
 
-          <h3 class="sat-title font-normal text-xl">GPS Satellites</h3>
+          <h3 class="sat-title">GPS Satellites</h3>
 
           <div class="satellite-list mt-4 -ml-1 flex justify-start">
 
@@ -63,9 +65,9 @@
 
           </div>
 
-          <div class="location-coords text-lg flex justify-between items-center">
-            <div class="font-regular">36°05'44.7"N 115°10'33.8"W</div>
-            <button class="block uppercase text-center border-none">Retry</button>
+          <div class="location-coords flex justify-between items-center">
+            <p class="text-lg">36°05'44.7"N 115°10'33.8"W</p>
+            <button class="btn-tertiary">Retry</button>
           </div>
 
       </section>
@@ -94,12 +96,25 @@
 }
 */
 
+.toggler .toggle-active {
+  @apply border rounded-full border-grey flex items-center cursor-pointer w-12 bg-primary justify-end;
+}
+
+.toggler .toggle-inactive {
+  @apply border rounded-full border-grey flex items-center cursor-pointer w-12 justify-start;
+}
+
+.toggler .toggle-btn {
+ @apply rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow;
+}
+
 </style>
 
 <script>
   import SatelliteItem from '~/components/SatelliteItem.vue'
   import GeneralHeader from '~/components/global/GeneralHeader.vue'
   export default {
+
     components: {
       SatelliteItem,
       GeneralHeader

@@ -39,7 +39,7 @@
       </span>
     </transition>
     <transition name="dropin">
-      <div v-show="showcontextmenu" class="contextmenu absolute pin-r pin-t h-auto w-48 bg-grey-lightest mt-12 mr-12 p-4 flex flex-col items-start ">
+      <div v-show="showcontextmenu" class="contextmenu absolute pin-r pin-t h-auto w-48 bg-grey-lightest mt-12 mr-12 p-4 flex flex-col items-start shadow-lg z-20">
         <a href="#" class="in-component-context-menu-links">Sort by Date</a>
         <a href="#" class="no-underline text-black p-4">Sort by Type</a>
         <a href="#" class="no-underline text-black p-4">Filter</a>

@@ -11,7 +11,7 @@
       <span class="your-box-transaction tab inline-block uppercase p-4 border-b-4 border-primary cursor-pointer">Your box</span>
       <span class="global-transaction-tab inline-block uppercase p-4 cursor-pointer">Global</span>
     </div>
-    <section class="transaction-listing mt-16">
+    <section class="transaction-listing my-16">
 
         <TransactionItem 
         v-for="item in items"

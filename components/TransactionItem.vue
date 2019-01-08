@@ -1,7 +1,7 @@
 <template>
     <div class="transaction-item-area flex items-center justify-between p-4 border-b-2 ">
         <div class="transaction-item-info max-w-md">
-            <h4 class="mb-2 font-normal">
+            <h4 class="mb-2">
                     {{item.title}}
             </h4>
             <p class="text-xs text-grey-darker">
@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="transaction-more-details">
-            <button class="border-none bg-none">Details</button>
+            <button class="btn-tertiary">Details</button>
         </div>
     </div>
 </template>
