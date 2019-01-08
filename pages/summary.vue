@@ -35,11 +35,12 @@
         <div class="global-average">
           <h4 class="my-4">Global average</h4>
           <div class="latency-measure">
-            <svg width="303" height="48" viewBox="0 0 303 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="10" width="303" height="26" fill="#C4C4C4"/>
-              <rect y="10" width="253" height="26" fill="#FF5722"/>
-              <line x1="155.5" y1="2.18557e-08" x2="155.5" y2="48" stroke="black"/>
+            <svg width="303" height="50" viewBox="0 0 303 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="12" width="303" height="26" fill="#C4C4C4"/>
+              <rect y="12" width="253" height="26" fill="#FF5722"/>
+              <rect x="154" width="2" height="50" fill="black"/>
             </svg>
+
           </div>
           <p class="font-semibold">+48%</p>
         </div>
