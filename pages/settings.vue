@@ -76,9 +76,9 @@
         <label for="wifi-network">Wifi network</label>
           <select name="wifi-network" id="wifi-network">
               <option value="john" selected="selected">Johns Network</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
+            <option value="sarah">Sarah Network</option>
+            <option value="open">Open wifi</option>
+            <option value="6HDD-router">6HDD-router</option>
           </select>
       </form>
 

@@ -136,7 +136,7 @@ select, input[type="password"], input[type="text"] {
 }
 
 .wizard-button {
-  @apply mt-12 w-64 text-center;
+  @apply mt-12 mb-12 w-64 text-center;
 }
 
 .wizard-splash-icon {

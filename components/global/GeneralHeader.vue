@@ -21,7 +21,9 @@
     </header>
     <transition name="slide">
       <span v-show="showdrawer" class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4">
-        <img class="center block pb-4" src="~/assets/images/Circular-Image-with-Icon.png" width="60" height="60">
+        <nuxt-link to="/" class="no-underline">
+          <img class="center block pb-4" src="~/assets/images/Circular-Image-with-Icon.png" width="60" height="60">
+        </nuxt-link>
         <div class="nav-listing flex flex-col flex-start border-t-2 pt-4 w-full">
           <nuxt-link to="/summary" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">stars</span>
