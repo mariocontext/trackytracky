@@ -12,14 +12,18 @@
       <section class="node-info-area my-4">
         <div class="node-info mb-4 flex justify-between">
           <h2 class="font-light">iMyn node 63</h2>
-          <div>
-            <input type="checkbox" name="toggle-test-net" value="yes" checked> Test net</input>
+          <div class="flex justify-end items-center">
+            <span class="font-regular pr-4">Test net</span>
+            <span class="border rounded-full border-grey flex items-center cursor-pointer w-12 bg-primary justify-end">
+              <span class="rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow">
+              </span>
+            </span>
           </div>
         </div>
         <div class="firmware mt-4 flex justify-between">
           <div>
             <p>Firmware version 0.6.5.2</p>
-            <input class="my-2" type="checkbox" name="auto-update" value="yes"> auto update</input>
+            <input class="mt-4" type="checkbox" name="auto-update" value="yes"> auto update</input>
           </div>
           <button class="node-update-action opacity-50 cursor-not-allowed">Update</button>
         </div>
@@ -40,19 +44,19 @@
 
           <h3 class="sat-title font-normal text-xl">GPS Satellites</h3>
 
-          <div class="satellite-list mt-4 flex justify-start">
+          <div class="satellite-list mt-4 -ml-1 flex justify-start">
 
-            <SatelliteItem>
+            <SatelliteItem class="mr-4">
               <span slot="satellite-id">1A</span>
               <span slot="satellite-strength">80%</span>
             </SatelliteItem>
 
-            <SatelliteItem>
+            <SatelliteItem class="mr-4">
               <span slot="satellite-id">2A</span>
               <span slot="satellite-strength">40%</span>
             </SatelliteItem>
 
-            <SatelliteItem>
+            <SatelliteItem class="mr-4">
               <span slot="satellite-id">3A</span>
               <span slot="satellite-strength">60%</span>
             </SatelliteItem>
