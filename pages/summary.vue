@@ -7,7 +7,7 @@
 
   <main class="container mx-auto p-4 m-4 flex flex-col items-center">
     <section class="max-w-sm text-center">
-      <h1 class="font-medium">iMyn Node 63</h1>
+      <h1>iMyn Node 63</h1>
       <!-- upload download area -->
       <div class="upload-download-area flex justify-around">
         <div>
