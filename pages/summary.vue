@@ -40,7 +40,6 @@
               <rect y="12" width="253" height="26" fill="#FF5722"/>
               <rect x="154" width="2" height="50" fill="black"/>
             </svg>
-
           </div>
           <p class="font-semibold">+48%</p>
         </div>

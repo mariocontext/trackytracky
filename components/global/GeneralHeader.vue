@@ -13,7 +13,9 @@
           <slot name="header-title">title goes here</slot>
         </h1>
         </span>
-      <span><i v-on:click="showcontextmenu = !showcontextmenu" class="material-icons text-white cursor-pointer">more_vert</i></span>
+      <span v-bind:class="[ triggerIsActive ? 'visible': 'invisible' ]">
+        <i v-on:click="showcontextmenu = !showcontextmenu" class="material-icons text-white cursor-pointer">more_vert</i>
+        </span>
     </header>
     <transition name="slide">
       <span v-show="showdrawer" class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4">
@@ -70,7 +72,9 @@
 <script>
 
 export default {
-
+    props: {
+      triggerIsActive: Boolean
+    },
     data() {
       return {
       showdrawer: false,
