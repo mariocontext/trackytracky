@@ -13,7 +13,7 @@
           <slot name="header-title">title goes here</slot>
         </h1>
         </span>
-      <span v-bind:class="[ triggerIsActive ? 'visible': 'invisible' ]">
+      <span v-bind:class="[ contextTriggerIsActive ? 'visible': 'invisible' ]">
         <i v-on:click="showcontextmenu = !showcontextmenu" class="material-icons text-white cursor-pointer">more_vert</i>
         </span>
     </header>
@@ -73,7 +73,7 @@
 
 export default {
     props: {
-      triggerIsActive: Boolean
+      contextTriggerIsActive: Boolean
     },
     data() {
       return {

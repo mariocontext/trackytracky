@@ -1,7 +1,7 @@
 
 <template>
   <div class="nuxt-holding-element">
-    <GeneralHeader triggerIsActive>
+    <GeneralHeader contextTriggerIsActive>
     <span slot="header-title">History</span>
     </GeneralHeader>
 
