@@ -105,7 +105,7 @@
 
 .btn, button {
   @apply p-4 border border-grey rounded-lg no-underline uppercase font-semibold text-grey-darker;
-  transition: background-color 0.25s ease-in;
+  /* transition: background-color 0.25s ease-in; */
 }
 
 .btn:hover, button:hover {
@@ -154,9 +154,11 @@ select, input[type="password"], input[type="text"] {
  */
 @tailwind utilities;
 
+/*
 .transition-all {
   transition: all 0.5s ease-in;
 }
+*/
 
 /**
  * Here you would add any custom utilities you need that don't come out of the

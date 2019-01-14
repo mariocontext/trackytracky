@@ -47,7 +47,7 @@
     </section>
 
 
-      <nuxt-link to="/history" class="btn btn-primary wizard-button">View History</nuxt-link>
+      <nuxt-link to="/history" class="btn btn-primary wizard-button transition">View History</nuxt-link>
     
   </main>
 

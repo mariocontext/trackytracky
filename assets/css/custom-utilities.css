@@ -1,7 +1,8 @@
 /* custom utilities */
-.transform-all {
+/* .transform-all {
     transition: all 0.5s ease-in;
   }
+  */
 .custom-text-10xl {
   font-size: 10rem;
 }

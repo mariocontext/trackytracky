@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "glhd-tailwindcss-transitions": "^0.3.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
