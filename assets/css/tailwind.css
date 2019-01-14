@@ -104,7 +104,7 @@
 }
 
 .btn, button {
-  @apply p-4 border border-grey rounded-lg no-underline uppercase font-semibold text-grey-darker;
+  @apply p-4 border border-grey rounded-lg no-underline uppercase font-semibold text-grey-darker transition-slow;
   /* transition: background-color 0.25s ease-in; */
 }
 
