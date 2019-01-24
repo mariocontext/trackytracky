@@ -3,6 +3,7 @@
     <main class="min-h-screen flex flex-col mt-12 items-center">
       <h1>Welcome</h1>
       <div class="my-4">
+        <!-- TODO: replace with SVG version once we find out what didn't translate -->
         <img class="center" src="~/assets/images/tracky-tracky-logo192.png">
       </div>
       <sub class="m-2">Tracky Tracky Logo</sub>
