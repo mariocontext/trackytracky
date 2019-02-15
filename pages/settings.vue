@@ -105,21 +105,18 @@
 }
 
 .toggler .toggle-btn {
- @apply rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow;
+  @apply rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow;
 }
-
 </style>
 
 <script>
-  import SatelliteItem from '~/components/SatelliteItem.vue'
-  import GeneralHeader from '~/components/global/GeneralHeader.vue'
-  export default {
+import SatelliteItem from '~/components/SatelliteItem.vue'
 
-    components: {
-      SatelliteItem,
-      GeneralHeader
-    }
+export default {
+  components: {
+    SatelliteItem
   }
+}
 </script>
 
 
