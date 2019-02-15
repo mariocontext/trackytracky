@@ -32,67 +32,64 @@
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-
 </style>
 
 <script>
-  import GeneralHeader from '~/components/global/GeneralHeader.vue'
-  import TransactionItem from '~/components/TransactionItem.vue'
+import TransactionItem from '~/components/TransactionItem.vue'
 
-  let nextItemId = 1
+let nextItemId = 1
 
-  export default {
-    components: {
-      GeneralHeader,
-      TransactionItem
-    },
-    data () {
+export default {
+  components: {
+    TransactionItem
+  },
+  data() {
     return {
       items: [
-          {
-            id: nextItemId++,
-            title: 'Transaction 1'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 2'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 3'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 4'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 5'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 6'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 7'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 8'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 9'
-          },
-          {
-            id: nextItemId++,
-            title: 'Transaction 10'
-          }
-			  ]
-      }
+        {
+          id: nextItemId++,
+          title: 'Transaction 1'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 2'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 3'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 4'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 5'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 6'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 7'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 8'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 9'
+        },
+        {
+          id: nextItemId++,
+          title: 'Transaction 10'
+        }
+      ]
     }
   }
+}
 </script>
 
 
