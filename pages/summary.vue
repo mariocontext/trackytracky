@@ -1,9 +1,9 @@
 <template>
  <div class="nuxt-holding-element">
 
-  <GeneralHeader>
+  <BaseGeneralHeader>
    <span slot="header-title">Summary</span>
-  </GeneralHeader>
+  </BaseGeneralHeader>
 
   <main class="container mx-auto p-4 m-4 flex flex-col items-center">
     <section class="max-w-sm text-center">
