@@ -35,7 +35,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/global.js' }],
+  plugins: [{ src: '~/global.js' }],
 
   /*
    ** Nuxt.js modules

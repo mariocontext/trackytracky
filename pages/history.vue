@@ -1,9 +1,9 @@
 
 <template>
   <div class="nuxt-holding-element">
-    <GeneralHeader contextTriggerIsActive>
+    <BaseGeneralHeader contextTriggerIsActive>
     <span slot="header-title">History</span>
-    </GeneralHeader>
+    </BaseGeneralHeader>
 
   <main class="container mx-auto px-4 mx-4 flex flex-col">
     <!-- Local and Global History tabs -->

@@ -53,13 +53,11 @@
 </template>
 
 <style>
-
 /* In Component Styles */
 
 .in-component-navbar-links {
   @apply text-black font-semibold no-underline py-4;
 }
-
 
 .in-component-navbar-links:hover {
   @apply text-secondary;
@@ -74,11 +72,11 @@
   @apply no-underline text-black p-4;
 }
 
-
 /* transitions */
 
-.slide-enter-active, .slide-leave-active {
-  transition: all .3s ease-in-out;
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-in-out;
 }
 
 .slide-enter, .slide-leave-to
@@ -86,11 +84,13 @@
   transform: translateX(-256px);
 }
 
-.dropin-enter-active, .dropin-leave-active {
-  transition: all .3s ease-in-out;
+.dropin-enter-active,
+.dropin-leave-active {
+  transition: all 0.3s ease-in-out;
 }
 
-.dropin-enter, .dropin-leave-to {
+.dropin-enter,
+.dropin-leave-to {
   transform: translateY(-400px);
   opacity: 0;
 }
@@ -98,18 +98,16 @@
 
 
 <script>
-
 export default {
-    props: {
-      contextTriggerIsActive: Boolean
-    },
-    data() {
-      return {
+  props: {
+    contextTriggerIsActive: Boolean
+  },
+  data() {
+    return {
       showdrawer: false,
       showcontextmenu: false
     }
   }
-
 }
 </script>
 

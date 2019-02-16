@@ -2,9 +2,9 @@
 <template>
   <div class="nuxt-holding-element">
 
-    <GeneralHeader>
+    <BaseGeneralHeader>
     <span slot="header-title">Settings</span>
-    </GeneralHeader>
+    </BaseGeneralHeader>
 
     <main class="settings-area min-h-screen max-w-sm mx-auto p-4">
 
@@ -48,20 +48,20 @@
 
           <div class="satellite-list mt-4 -ml-1 flex justify-start">
 
-            <SatelliteItem class="mr-4">
+            <BaseSatelliteItem class="mr-4">
               <span slot="satellite-id">1A</span>
               <span slot="satellite-strength">80%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
-            <SatelliteItem class="mr-4">
+            <BaseSatelliteItem class="mr-4">
               <span slot="satellite-id">2A</span>
               <span slot="satellite-strength">40%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
-            <SatelliteItem class="mr-4">
+            <BaseSatelliteItem class="mr-4">
               <span slot="satellite-id">3A</span>
               <span slot="satellite-strength">60%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
           </div>
 
@@ -83,6 +83,8 @@
       </form>
 
       <nuxt-link to="/summary" class="block wizard-button btn btn-primary pin-b mt-8 w-32 mx-auto">Next</nuxt-link>
+
+      <BaseGeneralFooter/>
 
     </main>
   
@@ -110,13 +112,6 @@
 </style>
 
 <script>
-import SatelliteItem from '~/components/SatelliteItem.vue'
-
-export default {
-  components: {
-    SatelliteItem
-  }
-}
 </script>
 
 

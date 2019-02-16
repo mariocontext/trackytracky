@@ -15,20 +15,20 @@
           <h3 class="my-4 text-center">GPS Satellites</h3>
           <div class="flex justify-between">
 
-            <SatelliteItem>
+            <BaseSatelliteItem>
               <span slot="satellite-id">1A</span>
               <span slot="satellite-strength">80%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
-            <SatelliteItem>
+            <BaseSatelliteItem>
               <span slot="satellite-id">2A</span>
               <span slot="satellite-strength">40%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
-            <SatelliteItem>
+            <BaseSatelliteItem>
               <span slot="satellite-id">3A</span>
               <span slot="satellite-strength">60%</span>
-            </SatelliteItem>
+            </BaseSatelliteItem>
 
           </div>
 
@@ -54,17 +54,9 @@
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-
 </style>
 
 <script>
-  import SatelliteItem from '~/components/SatelliteItem.vue'
-
-  export default {
-    components: {
-      SatelliteItem
-    }
-  }
 </script>
 
 
